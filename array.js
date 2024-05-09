@@ -60,5 +60,22 @@ console.log(sum);
             // Output: 15 (1 + 2 + 3 + 4 + 5)
 
 
+/*----3.forEach() with object----*/
+const person ={
+   name: "John",
+  age: 30,
+  country: "USA" 
+};
+
+Object.entries(person).forEach(([key, value]) => {
+  console.log(`${key}: ${value}`);
+});
+
+// Output:
+// name: John
+// age: 30
+// country: USA
+
+
 
 
