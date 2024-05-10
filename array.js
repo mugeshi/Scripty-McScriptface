@@ -79,3 +79,48 @@ Object.entries(person).forEach(([key, value]) => {
 
 
 
+ 
+ // 4.Every Method --> This return True or False  (it strict)
+const hasInexpensiveItems = items.every((item) =>{
+  return item.price <= 0
+})
+
+console.log(hasInexpensiveItems)
+                            //output False
+    
+
+// 5. Some Method
+const hasInexpensiveItems = items.some((item) =>{
+  return item.price <= 100
+})
+
+console.log(hasInexpensiveItems)
+
+
+
+
+
+//6. Reduce method  ---> when you want to add everything (operation)
+
+const total = items.reduce((currentTotal, item) => {
+  return item.price +currentTotal
+
+}, 0)
+
+console.log(total)
+                   //output 1840
+
+
+
+    
+
+  // 7. include Method  ---> it checks if the number is searched for is available return True or False
+  const items = [1,2,3,4,5]
+  const includeTwo = items.includes(7)
+  console.log(includeTwo)
+
+                //output False
+
+ 
+
+
