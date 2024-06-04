@@ -33,9 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
       
       // Clear the task input field
       taskInput.value = "";
-      
-      // Log message with task details
-      console.log("Task added:", taskText, "Priority:", priorityValue);
+    
+      // le.log("Task added:", taskText, "Priority:", priorityValue);
     } else {
       // Show an alert if the task input is empty
       alert("Please enter a task!");
